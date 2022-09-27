@@ -39,7 +39,6 @@ header h1{
 .inputContainer{
     width: 700px;
     height: 100%;
-    border: 1px solid black;
     margin-left: 70px;
     display: flex;
     justify-content: space-between;
@@ -47,9 +46,10 @@ header h1{
 
 }
 
-#search{
-width: 80%;
+#searchPokemon{
+width: 85%;
 height: 80%;
+border-radius: 5px;
 }
 
 #searchButton{

@@ -6,7 +6,7 @@ const typePokemon = document.getElementById('typePokemon')
 const searchPokemonInput = document.getElementById('searchPokemon') 
 const searchButton = document.getElementById('searchButton')
 
-
+let pokemonFiltered;
 
 // recibe parametro lista de pokemones
 export const printPokemons = (listPokemons) => { //llamar la función del process
@@ -108,12 +108,20 @@ document.addEventListener('click', async ({target}) => {
     }
 })
 
-// searchButton.addEventListener('click', handleSearch)
+
 
 // const handleSearch = () => {
 //     let pokemonInput = searchPokemonInput.value;
 //     findPokemon(pokemonInput);
 // }
+
+const consoleW = () => {
+    console.log('buscando')
+}
+
+searchButton.addEventListener('click', consoleW)
+
+
 
 // const findPokemon = (word) => {
 //     pokemonFiltered = data.find((pokemon) => 
