@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.container{
+    max-width: 1870px;
+    margin: 0 auto;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -29,17 +34,38 @@ header{
 header h1{
     line-height: 50px;
     margin-left: 10px;
+}
 
+.inputContainer{
+    width: 700px;
+    height: 100%;
+    border: 1px solid black;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#search{
+width: 80%;
+height: 80%;
+}
+
+#searchButton{
+    width: 70px;
+    height: 80%;
 }
 
 main{
     background-color: #DBE2EF;
     width: 100%;
-    height: 100vh;
+    height: 700px;
     padding: 40px;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
+    border: 1px solid black;
 }
 
 
@@ -55,7 +81,9 @@ main section h1{
 }
 
 .section1{
+    display: flex;
     justify-items: center;
+    flex-direction: column;
 }
 
 #charizard_image{
@@ -97,10 +125,29 @@ main section h1{
 
 footer{
     background-color: #F9F7F7;
-    display: flex;
     width: 100%;
     height: 140px;
-    justify-content:right;
+}
+
+.footerContainer{
+    display: flex;
+    height: 140px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerContainer h2{
+    margin-left: 150px;
+}
+
+
+#pokemonsFooter{
+    background-color: #F9F7F7;
+    display: flex;
+    width: 70%;
+    height: 140px;
+    justify-content: center;
+    gap: 5vw;
     align-items: center;
 }
 
@@ -112,7 +159,14 @@ footer{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    margin-right: 140px;
+
+    cursor: pointer;
+}
+
+.img_footer_container:hover{
+    filter: brightness(80%);
+-webkit-filter: brightness(80%);
+-moz-filter: brightness(80%);
 }
 
 
@@ -122,4 +176,99 @@ footer{
 
 footer h2{
     margin-right: 200px;
+}
+
+
+@media (max-width:500px) {
+    header{
+        width: 100%;
+        
+    }
+    body{
+        width: 100%;
+        Overflow-x: hidden;
+    
+    }
+
+    main{
+        width: 100%;
+        height: 100%;
+        
+    }
+    #mainContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .section1{
+        align-items: center;
+    }
+   
+    .section1 h1{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section1 img{
+        width: 300px;
+    }
+
+
+    #charizard_image{
+        width: 100%;
+
+    }
+    footer{
+        width: 100%;
+        height: max-content;
+        background-color: #3F72AF;
+    }
+
+    .footerContainer{
+        height: max-content;
+        flex-direction: column;
+    }
+
+    footer h2{
+        width: 100%;
+        height: 20vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left:45vw;
+        color: white;
+    }
+    #pokemonsFooter{
+        background-color: #F9F7F7;
+        display: flex;
+        flex-wrap: wrap;
+        columns: 2;
+        gap: 5vw;
+        width: 100%;
+        height: 150%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .img_footer_container{
+        width: 90px;
+        height: 90px;
+    }
+
+    .img_footer{
+        width: 60px;
+    }
+    .img_footer_container:hover{
+        filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%);
+    }
+
+    .content_s2 p{
+        font-size: 5vw;
+    }
 }

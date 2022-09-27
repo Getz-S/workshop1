@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"
+        integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Pokedex</title>
 </head>
+
 <body>
     <header>
         <figure>
@@ -14,10 +19,15 @@
         </figure>
         <h1>POKEDEX</h1>
 
+        <div class="inputContainer">
+            <input type="text" id="searchPokemon" placeholder="Buscar pokemon">
+            <button id="searchButton">Buscar</button>
+        </div>
+
     </header>
-    <main>
+    <main id="mainContainer">
         <section class="section section1">
-            <h1> <span>&#128293;</span> CHARIZARD</h1>
+            <h1>CHARIZARD</h1>
             <figure>
                 <img src="images/charizard.png" alt="charizard" id="charizard_image">
             </figure>
@@ -71,26 +81,16 @@
     </main>
 
     <footer>
-        <h2>OTHERS</h2>
+        <div class="footerContainer container">
+            <h2>OTHERS</h2>
 
-        <figure class="img_footer_container">
-            <img src="images/squirtle.png" alt="squirtle" class="img_footer">
-        </figure>
-
-        <figure class="img_footer_container">
-            <img src="images/meowth.png" alt="meowth" class="img_footer">
-        </figure>
-
-        <figure class="img_footer_container">
-            <img src="images/pidgey.png" alt="pidgey" class="img_footer">
-        </figure>
-
-        <figure class="img_footer_container">
-            <img src="images/snorlax.png" alt="snorlax" class="img_footer">
-        </figure>
+            <div id="pokemonsFooter">
+                
+            </div>
+        </div>
 
     </footer>
-    
+    <script src="scripts/main.js" type="module"></script>
 </body>
-</html>
 
+</html>
